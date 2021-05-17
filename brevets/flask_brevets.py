@@ -53,6 +53,9 @@ def _calc_times():
     km = request.args.get('km', 999, type=float)
     app.logger.debug("km={}".format(km))
     app.logger.debug("request.args: {}".format(request.args))
+    dist = request.args.get('dist', type = int)
+    bd = request.args.get('bd', type =str)
+    arrow_bd = arrow.get(bd, 'YYYY-MM-DDTHH:mm')
     # FIXME!
     # Right now, only the current time is passed as the start time
     # and control distance is fixed to 200

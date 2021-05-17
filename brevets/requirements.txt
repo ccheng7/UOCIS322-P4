@@ -1,3 +1,5 @@
-arrow
-Flask
-nose
+for i in tests/* .py
+do
+    nosetests $t
+done
+	
