@@ -1,5 +1,4 @@
-for i in tests/* .py
-do
-    nosetests $t
-done
+arrow 
+flask
+nose
 	
